@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Administración del Club - Pago de Cuotas</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="socios.html" >Socios</a></li>
+      <li><a href="cuotas.html" >Cuotas</a></li>
+      <li><a href="control.html" >Control de Acceso</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+    <div id="bodyCuotas">
+
+        <h1>Administración del Club - Pago de Cuotas</h1>
+
+        <h2>Carga de Pagos Mensuales</h2>
+        <form id="pagoForm">
+          <label for="socioSelect">Socio Nro:</label>
+          <input type="text" id="dni" >
+          <button type="button" id="btnReg" onclick="buscar()">Buscar</button>
+          <br>
+          <label for="socioSelect">Socio:</label>
+          <select id="socioSelect" required>
+          </select>
+          <br>
+          <div id="camposJuntos">
+          <label>Apellido: </label> 
+          <label for="socioApellido" id="socioApellido"></label>
+          </div>
+          <br>
+          <div id="camposJuntos">
+          <label>Nombre: </label> 
+          <label for="socioNombre" id="socioNombre"></label>
+          </div>
+          <br>
+          <div id="camposJuntos">
+          <label>Estado de Cuota: </label> 
+          <label for="socioEstadoCuota" id="socioEstadoCuota"></label>
+          </div>
+          <br>
+          <br>
+          <label for="nroComp">Nro Comp. de Pago:</label>
+          <input type="text" id="nroComp" required>
+          <br>
+          <button type="submit" id="btnReg">Cargar Pago</button>
+        </form>
+    </div>
+  
+
+  <script src="../js/cuotas.js"></script>
+</body>
+</html>

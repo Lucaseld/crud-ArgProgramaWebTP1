@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#bodySocios,
+#indexBody ,  #bodyCuotas,#bodyControl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#bodyCuotas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#afiliado,#camposJuntos{
+  display: flex;
+}
+#bodySocios h1,#bodyCuotas h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#bodySocios h2,#bodyCuotas h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#listaForm,#socioForm,#pagoForm,#accesoTable {
+  width: 80%;
+  max-width: 700px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#listaForm label,#socioForm label,#pagoForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#listaForm input,#socioForm input,#pagoForm input,#listaForm select,#socioForm select,
+#pagoForm select,#listaForm button,#socioForm button,#pagoForm button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#grillaSocios {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#grillaSocios th {
+  background-color: #f2f2f2;
+}
+
+#divSocios {
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+
+#divSocios th,
+#divSocios td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+#btnReg {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#btnReg:hover {
+  background-color: #45a049;
+}
+
+#btnMod {
+  background-color: #2196f3;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#btnMod:hover {
+  background-color: #0b7dda;
+}
+
+
+#btnBor {
+  background-color: rgb(192, 33, 33);
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#btnBor:hover {
+  background-color: rgb(172, 30, 30);
+}

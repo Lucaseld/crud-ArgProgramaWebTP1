@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Administración del Club - Socios</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="socios.html" >Socios</a></li>
+      <li><a href="cuotas.html" >Cuotas</a></li>
+      <li><a href="control.html" >Control de Acceso</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+    <div id="bodySocios">
+
+
+        <h1>Administración del Club - Modificacion de Socios</h1>
+        <div id="divSocios"> 
+        <form id="listaForm">
+          <div>
+              <h2>Lista de Socios</h2>
+              <label for="dniBusqueda">Buscar por DNI:</label>
+              <input type="text" id="dniBusqueda" placeholder="Ingrese DNI" >
+              <button type="button" id="btnReg" onclick="buscar()">Buscar</button>
+              <button type="button" id="btnReg" onclick="loadSocios()">Todos</button>
+              <table id="grillaSocios">
+                <thead>
+                  <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Dirección</th>
+                    <th>Email</th>
+                    <th>Estado</th>
+                    <th>Categoria</th>
+                  </tr>
+                </thead>
+                <tbody id="sociosBody">
+                </tbody>
+              </table>
+          </div>
+        </form>
+
+        <form id="socioForm">
+            <div id="formulario">
+                <div id="afiliado">
+                    <h2>Afiliado: </h2>
+                    <h2 id="afiliadoDni"></h2>
+                </div>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required >
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required >
+                <br>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" required >
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" required >
+                <br>
+                <label for="categoria">Categoría:</label>
+                <select id="categoria">
+                  <option value="cadete">Cadete</option>
+                  <option value="pleno">Socio pleno</option>
+                  <option value="adherente">Adherente</option>
+                </select>
+                <select id="estado">
+                  <option value="activo">Activo</option>
+                  <option value="inactivo">Inactivo</option>
+                </select>
+                <br>
+                <button type="submit" id="btnMod" onclick="btnModificarSocio()"">Modificar</button>
+            </div>
+          </form>
+      
+        </div>
+    </div>
+
+  <script src="../js/socios.js"></script>
+</body>
+</html>
