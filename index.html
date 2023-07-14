@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Argentina Programa Nivel 2 - TP 1</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./html/socios.html" >Socios</a></li>
+        <li><a href="./html/cuotas.html" >Cuotas</a></li>
+        <li><a href="./html/control.html" >Control de Acceso</a></li>
+      </ul>
+    </nav>
+
+    </header> 
+    
+    
+    <div id="indexBody">
+    <h1>Administración del Club - Alta de Socios</h1>
+    <form id="socioForm">
+      <div id="formulario">
+          <h2>Afiliación de Socios</h2>
+          <label for="nombre">DNI:</label>
+          <input type="text" id="dni" required placeholder="12345678" pattern="[0-9]+" title="Ingrese solo caracteres numéricos">
+          <br>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required placeholder="Ingrese Nombre">
+          <br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" required placeholder="Ingrese Apellido">
+          <br>
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" required placeholder="Ingrese Direccion">
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" required placeholder="Ingrese Email">
+          <br>
+          <br>
+          <button type="submit" id="btnReg">Registrar</button>
+      </div>
+    </form>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>
