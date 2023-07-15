@@ -28,7 +28,6 @@ window.addEventListener('load', function() {
         toggleAcceso(socioIndex);
       });
   
-      // Actualizar el texto del botón según el estado de acceso del socio
       if (socio.acceso) {
         accesoButton.innerHTML = 'Denegar Acceso';
         accesoButton.id="btnBor";
@@ -60,7 +59,7 @@ window.addEventListener('load', function() {
       socios[socioIndex] = socio;
       localStorage.setItem('socios', JSON.stringify(socios));
   
-      loadSocios(); // Cargar nuevamente los socios en la grilla
+      loadSocios();
     }
   }
   
