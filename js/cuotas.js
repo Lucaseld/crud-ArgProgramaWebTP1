@@ -70,6 +70,7 @@ window.addEventListener('load', function() {
     
         if (socio.dni == dni) {
             socio.accesoClub = "Autorizado";
+            socio.acceso = true;
         }
       }
     
