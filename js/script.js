@@ -19,7 +19,7 @@ window.addEventListener('load', function() {
       direccion: direccion,
       email: email,
       estado: "inactivo",
-      categoria: "adherente",
+      categoria: "Adherente",
       accesoClub: 'Denegado'
     };
   
