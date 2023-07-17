@@ -69,7 +69,7 @@ window.addEventListener('load', function() {
         var socio = socios[i];
     
         if (socio.dni == dni) {
-            socio.accesoClub = "autorizado";
+            socio.accesoClub = "Autorizado";
         }
       }
     
