@@ -20,7 +20,8 @@ window.addEventListener('load', function() {
       email: email,
       estado: "inactivo",
       categoria: "adherente",
-      accesoClub: 'Denegado'
+      accesoClub: 'Denegado',
+      acceso: false
     };
   
     if (validarSocio(socio)){
